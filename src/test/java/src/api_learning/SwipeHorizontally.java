@@ -90,7 +90,7 @@ public class SwipeHorizontally {
 //                System.out.println(textViewHorizonElem.get(0).getText());
 //            }
  //           while (check);
-            while (check || i<5) {
+            while (check & i<6) {
                 List<MobileElement> textViewHorizonElem = appiumDriver.findElements(MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"slideTextContainer\"])/android.widget.TextView"));
                 System.out.println(i +  textViewHorizonElem.get(0).getText());
                 touchAction
