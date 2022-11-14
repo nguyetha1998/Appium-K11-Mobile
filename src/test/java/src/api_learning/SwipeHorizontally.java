@@ -58,7 +58,7 @@ public class SwipeHorizontally {
             //           MobileElement horizontallyElem = appiumDriver.findElement(MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"slideTextContainer\"])/android.widget.TextView"));
 //            List<MobileElement> textViewHorizonElem = appiumDriver.findElements(MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"slideTextContainer\"])/android.widget.TextView"));
 
-            int i=0;
+            int i = 0;
 //            while (!textViewHorizonElem.get(0).getText().equals("COMPATIBLE")) {
 //                touchAction
 //                        .press(startPoint)
@@ -89,10 +89,10 @@ public class SwipeHorizontally {
 //                }
 //                System.out.println(textViewHorizonElem.get(0).getText());
 //            }
- //           while (check);
-            while (check & i<6) {
+            //           while (check);
+            while (check & i < 6) {
                 List<MobileElement> textViewHorizonElem = appiumDriver.findElements(MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"slideTextContainer\"])/android.widget.TextView"));
-                System.out.println(i +  textViewHorizonElem.get(0).getText());
+                System.out.println(i + "\t" + textViewHorizonElem.get(0).getText());
                 touchAction
                         .press(startPoint)
                         .waitAction(new WaitOptions().withDuration(Duration.ofMillis(500)))
