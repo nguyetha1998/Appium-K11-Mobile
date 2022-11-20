@@ -26,4 +26,12 @@ public class LoginCred {
         this.password = password;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "LoginCred{" +
+                "userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }
